@@ -5,6 +5,7 @@ using System;
 
 public class MapGenerator : MonoBehaviour
 {
+	public bool mostrarGizmos;
 
 	public int width;
 	public int height;
@@ -15,7 +16,8 @@ public class MapGenerator : MonoBehaviour
 	[Range(0, 100)]
 	public int randomFillPercent;
 
-	int[,] map;
+	[HideInInspector]
+	public int[,] map;
 
 	void Start()
 	{
@@ -30,7 +32,24 @@ public class MapGenerator : MonoBehaviour
 		}
 	}
 
-	void GenerateMap()
+    private void OnDrawGizmos()
+    {
+        if (mostrarGizmos && map!=null)
+        {
+			for (int i = 0; i < map.GetLength(0); i++)
+			{
+				for (int j = 0; j < map.GetLength(1); j++)
+				{
+					Gizmos.color = map[i, j] == 0 ? Color.white : Color.black;
+					Vector3 pos = new Vector3(-width / 2 + i + .5f, 0, -height / 2 + j + .5f);
+					Gizmos.DrawCube(transform.position + pos, new Vector3(.5f, .2f, .5f));
+				}
+			}
+		}
+    }
+
+
+    void GenerateMap()
 	{
 		map = new int[width, height];
 		RandomFillMap();

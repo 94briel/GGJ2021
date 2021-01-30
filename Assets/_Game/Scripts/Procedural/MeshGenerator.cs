@@ -8,6 +8,7 @@ public class MeshGenerator : MonoBehaviour
 	public SquareGrid squareGrid;
 	public MeshFilter walls;
 	public MeshFilter cave;
+	public float wallHeight = 5;
 
 	public bool is2D;
 
@@ -55,7 +56,6 @@ public class MeshGenerator : MonoBehaviour
 		}
 		mesh.uv = uvs;
 
-
 		if (is2D)
 		{
 			Generate2DColliders();
@@ -64,6 +64,7 @@ public class MeshGenerator : MonoBehaviour
 		{
 			CreateWallMesh();
 		}
+		//transform.position = Vector3.up * wallHeight;
 	}
 
 	void CreateWallMesh()
@@ -74,7 +75,6 @@ public class MeshGenerator : MonoBehaviour
 		List<Vector3> wallVertices = new List<Vector3>();
 		List<int> wallTriangles = new List<int>();
 		Mesh wallMesh = new Mesh();
-		float wallHeight = 5;
 
 		foreach (List<int> outline in outlines)
 		{
@@ -450,4 +450,5 @@ public class MeshGenerator : MonoBehaviour
 		}
 
 	}
+
 }
