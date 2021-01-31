@@ -366,47 +366,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297669553}
     m_Modifications:
-    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
-      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
-      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
-      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 784686918}
-    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
-      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1018895235610493633, guid: 9035f0b9bf7a60a4d84123103179a4dd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2430237660319702511, guid: 9035f0b9bf7a60a4d84123103179a4dd,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.07
-      objectReference: {fileID: 0}
     - target: {fileID: 2430237660796747345, guid: 9035f0b9bf7a60a4d84123103179a4dd,
         type: 3}
       propertyPath: esfera
       value: 
       objectReference: {fileID: 594797584}
-    - target: {fileID: 2430237660796747345, guid: 9035f0b9bf7a60a4d84123103179a4dd,
-        type: 3}
-      propertyPath: modelo
-      value: 
-      objectReference: {fileID: 784686919}
-    - target: {fileID: 2430237660796747345, guid: 9035f0b9bf7a60a4d84123103179a4dd,
-        type: 3}
-      propertyPath: animaciones
-      value: 
-      objectReference: {fileID: 784686920}
     - target: {fileID: 2430237660796747346, guid: 9035f0b9bf7a60a4d84123103179a4dd,
         type: 3}
       propertyPath: m_RootOrder
@@ -469,37 +433,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
---- !u!1 &784686918 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 389569601745623163, guid: 9035f0b9bf7a60a4d84123103179a4dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 754550905}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &784686919 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1018895235610493633, guid: 9035f0b9bf7a60a4d84123103179a4dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 754550905}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &784686920
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 784686918}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 0015d5d487e6b4c51b6be43a47511ed9, type: 3}
-  m_Controller: {fileID: 9100000, guid: 8276e05cd985e2f49821edcd44c92987, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &866830682
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +623,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 555587302}
   estadoTalisman: 0
+  ppVolume: {fileID: 0}
+  perfilBien: {fileID: 0}
+  perfilMal: {fileID: 0}
 --- !u!114 &1595344339
 MonoBehaviour:
   m_ObjectHideFlags: 0
