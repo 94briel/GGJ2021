@@ -9,12 +9,16 @@ public class EnemigoGenerico : MonoBehaviour
     public float rangoVision = 2;
     public float rangoEscapar = 3;
     public float rangoAtacar = 1;
+    public float daño;
+    public Vida vidaEnemigo;
+    public EstadoTalisman tipo;
 
     NavMeshAgent agente;
 
     float cuadradoRangoVision;
     float cuadradoRangoEscapar;
     float cuadradoRangoAracar;
+
     IEnumerator Start()
     {
         cuadradoRangoVision = rangoVision * rangoVision;
@@ -49,13 +53,23 @@ public class EnemigoGenerico : MonoBehaviour
     public void CambiarEstado(Estado e)
     {
         estado = e;
+        if (e == Estado.atacando)
+        {
+            if (vidaEnemigo == null)
+            {
+                vidaEnemigo = Control.singleton.jugador.GetComponent<Vida>();
+            }
+        }
     }
 
     void EstadoIdle()
     {
-        if((Control.singleton.jugador.transform.position - transform.position).sqrMagnitude < cuadradoRangoVision)
+        if (Control.singleton.estadoTalisman != tipo)
         {
-            CambiarEstado(Estado.siguiendo);
+            if ((Control.singleton.jugador.transform.position - transform.position).sqrMagnitude < cuadradoRangoVision)
+            {
+                CambiarEstado(Estado.siguiendo);
+            }
         }
     }
     void EstadoSiguiendo()
@@ -70,12 +84,27 @@ public class EnemigoGenerico : MonoBehaviour
         if (distan<cuadradoRangoAracar)
         {
             agente.SetDestination(transform.position);
+            CambiarEstado(Estado.atacando);
+        }
+        if (Control.singleton.estadoTalisman == tipo)
+        {
+            agente.SetDestination(transform.position);
             CambiarEstado(Estado.idle);
         }
     }
     void EstadoAtacando()
     {
-
+        vidaEnemigo.CausarDaño(daño);
+        float distan = (Control.singleton.jugador.transform.position - transform.position).sqrMagnitude;
+        if (distan > cuadradoRangoAracar + 1)
+        {
+            CambiarEstado(Estado.siguiendo);
+        }
+        if (Control.singleton.estadoTalisman == tipo)
+        {
+            agente.SetDestination(transform.position);
+            CambiarEstado(Estado.idle);
+        }
     }
     void EstadoMuerto()
     {
