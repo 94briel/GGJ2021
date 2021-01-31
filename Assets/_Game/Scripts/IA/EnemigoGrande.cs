@@ -20,6 +20,9 @@ public class EnemigoGrande : MonoBehaviour
     public Vector3 offsetParticulasMuerte;
     public float tiempoMorir;
 
+    public GameObject[] enemigos;
+    public Vector2 tiemposEspera;
+
     NavMeshAgent agente;
 
     float cuadradoRangoVision;
@@ -61,6 +64,20 @@ public class EnemigoGrande : MonoBehaviour
             }
         }
     }
+
+    IEnumerator CreaEnemigos()
+    {
+        while (estado != Estado.muerto)
+        {
+            float tiempoEspera = Random.Range(tiemposEspera.x, tiemposEspera.y);
+            yield return new WaitForSeconds(tiempoEspera);
+            if (estado == Estado.siguiendo)
+            {
+                Instantiate(enemigos[Random.Range(0, enemigos.Length)], transform.position + (Vector3.right * Random.Range(-10, 10) + Vector3.forward * Random.Range(-10, 10)), Quaternion.identity);
+            }
+        }
+    }
+
     private void OnDisable()
     {
         StopCoroutine(Interactuar());
