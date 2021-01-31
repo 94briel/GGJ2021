@@ -283,7 +283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -366,6 +366,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297669553}
     m_Modifications:
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92344475
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38200992
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.035467632
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.007763071
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 44.917004
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 4.826
+      objectReference: {fileID: 0}
+    - target: {fileID: 963194228, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.033
+      objectReference: {fileID: 0}
     - target: {fileID: 2430237660796747345, guid: 9035f0b9bf7a60a4d84123103179a4dd,
         type: 3}
       propertyPath: esfera
@@ -660,16 +692,19 @@ MonoBehaviour:
   - posibles: []
     activo: 0
   - posibles:
-    - {fileID: 919132149155446097, guid: bdece2994aad9ba4084678094f0a8ab0, type: 3}
+    - {fileID: 338049037642340196, guid: fda224811a1b62648a71e01f26a09c6d, type: 3}
     - {fileID: 919132149155446097, guid: b5a33ef95e3eed145ac4a1bf75d3009c, type: 3}
     - {fileID: 919132149155446097, guid: 2c088b4a7b57a074f8dc25e2c81ab6ab, type: 3}
+    - {fileID: 919132149155446097, guid: 42004cf1a4abd324b9b96daec387c1a8, type: 3}
     activo: 1
-  - posibles: []
+  - posibles:
+    - {fileID: 919132149155446097, guid: f40eda306ddb4c94a8fa120f1ba93f67, type: 3}
+    - {fileID: 919132149155446097, guid: a61a0a69885feea4c838543a06b0c9cc, type: 3}
+    - {fileID: 919132149155446097, guid: 0bfa540902e1c3f4d875e6bea05e4d60, type: 3}
     activo: 0
   - posibles:
-    - {fileID: 6740164359761288998, guid: 4d96e37fb5da46c46b9fff521fd3c98e, type: 3}
-    - {fileID: 8106149886998046759, guid: f5028795493942a4d848a9feb1994155, type: 3}
-    activo: 0
+    - {fileID: 919132149155446097, guid: d378148b156773c4bb76a1c5f2138596, type: 3}
+    activo: 1
   - posibles: []
     activo: 0
   - posibles: []
@@ -706,10 +741,16 @@ MonoBehaviour:
     - {fileID: 919132149155446097, guid: 1b345c5d56b169642b86f750bd786963, type: 3}
     - {fileID: 919132149155446097, guid: fa116a674e7a50249b00fbcd11328270, type: 3}
     - {fileID: 919132149155446097, guid: 37af98e839d9168448325f50a314511a, type: 3}
+    - {fileID: 919132149155446097, guid: 76a121381c6b6014c87c07b8e9391b28, type: 3}
+    - {fileID: 919132149155446097, guid: f5f835d60056d0e4ba70408298333e31, type: 3}
+    - {fileID: 919132149155446097, guid: 702f2c135fd2f394d90d5bdb38331ac4, type: 3}
+    - {fileID: 919132149155446097, guid: eaf29afd85b5f794caeef5f0f9ac4ba1, type: 3}
+    - {fileID: 634035091731882340, guid: 5278785a18367784896ea80b51725ae4, type: 3}
+    - {fileID: 5025443418755831053, guid: 0387a2a8e4fd78f468458eba44622e90, type: 3}
     activo: 1
   padreEntorno: {fileID: 151460676}
-  posibleCaso0: 0.02
-  posibleParedes: 1
+  posibleCaso0: 0.01
+  posibleParedes: 0.68
   enemigos:
   - {fileID: 5108465892107990088, guid: 616decddab0a8f945bcda453e873822e, type: 3}
   - {fileID: 5108465892107990088, guid: 86f8532fe2fd7394bb10bbba9fe161c7, type: 3}
