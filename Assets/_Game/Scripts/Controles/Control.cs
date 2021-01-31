@@ -6,6 +6,8 @@ public class Control : MonoBehaviour
 {
     public static Control singleton;
     public GameObject jugador;
+    public EstadoTalisman estadoTalisman;
+
     private void Awake()
     {
         singleton = this;
@@ -20,4 +22,10 @@ public class Control : MonoBehaviour
     {
         
     }
+}
+
+public enum EstadoTalisman
+{
+    bien = 0,
+    mal = 1
 }

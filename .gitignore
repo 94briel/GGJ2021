@@ -25,6 +25,7 @@ ProjectSettings/ProjectVersion.txt
 mono_crash.*
 
 # Build results
+/[Ll]ibrary/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

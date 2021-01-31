@@ -13,7 +13,12 @@ public class Poblador : MonoBehaviour
 	public List<Casilla> piso = new List<Casilla>();
 
 	public PosiblesParedes[] posiblesParedes;
+	public PosiblesParedes casos0;
 
+	[Range(0f,1f)]
+	public float posibleCaso0;
+	[Range(0f, 1f)]
+	public float posibleParedes;
 
     private IEnumerator Start()
     {
@@ -64,10 +69,22 @@ public class Poblador : MonoBehaviour
 				GameObject g = posiblesParedes[bordes[i].valor].GetPosible();
                 if (g != null)
                 {
-					Instantiate(g, bordes[i].posicion, Quaternion.identity);
+                    if (Random.Range(0f,1f)<posibleParedes)
+                    {
+						Instantiate(g, bordes[i].posicion, Quaternion.identity, transform);
+                    }
                 }
             }
         }
+
+        for (int i = 0; i < piso.Count; i++)
+        {
+			if (casos0.activo && Random.Range(0f, 1f) < posibleCaso0)
+			{
+				GameObject g = casos0.GetPosible();
+				Instantiate(g, piso[i].posicion, Quaternion.identity, transform);
+			}
+		}
     }
 
 
