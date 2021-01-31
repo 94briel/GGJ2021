@@ -30,6 +30,11 @@ public class PersonajeTemporal : MonoBehaviour
 
     public void MirarEsfera()
     {
+        float f = (Input.GetAxis("Vertical") * Input.GetAxis("Vertical")) + Input.GetAxis("Horizontal") * Input.GetAxis("Horizontal");
+        if (f<0.01)
+        {
+            return;
+        }
         Vector3 direccion = (esfera.position - transform.position).normalized;
         Vector3 derecha = Vector3.Cross(Vector3.up, direccion);
         Vector3 frente = Vector3.Cross(derecha, Vector3.up);
