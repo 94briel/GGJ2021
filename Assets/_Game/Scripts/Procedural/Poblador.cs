@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Poblador : MonoBehaviour
 {
 	public bool mostrarGizmos;
-
+	public NavMeshSurface[] mallaNavegacion;
     public MeshGenerator generador;
     public Color[] colorCasos;
 	public List<Casilla> bordes = new List<Casilla>();
 	public List<Casilla> piso = new List<Casilla>();
 
 	public PosiblesParedes[] posiblesParedes;
+
 
     private IEnumerator Start()
     {
@@ -23,6 +25,7 @@ public class Poblador : MonoBehaviour
 		DetectarEspacios();
 		yield return new WaitForSeconds(1f);
 		Rellenar();
+
 	}
 
 	public void DetectarEspacios()

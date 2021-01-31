@@ -100,6 +100,12 @@ public class MeshGenerator : MonoBehaviour
 		walls.mesh = wallMesh;
 		wallMesh.RecalculateNormals();
 
+		MeshCollider[] cols = walls.gameObject.GetComponents<MeshCollider>();
+		for (int i = 0; i < cols.Length; i++)
+		{
+			Destroy(cols[i]);
+		}
+
 		MeshCollider wallCollider = walls.gameObject.AddComponent<MeshCollider>();
 		wallCollider.sharedMesh = wallMesh;
 	}
