@@ -10,6 +10,7 @@ public class PersonajeTemporal : MonoBehaviour
     public GameObject bala;
     public Transform modelo;
     Rigidbody rb;
+    public Animator animaciones;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,7 +22,9 @@ public class PersonajeTemporal : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.MovePosition(transform.position + (Vector3.forward * Input.GetAxis("Vertical") + Vector3.right * Input.GetAxis("Horizontal")) * Time.fixedDeltaTime * velocidad);
+        Vector3 movement = Vector3.forward * Input.GetAxis("Vertical") + Vector3.right * Input.GetAxis("Horizontal");
+        animaciones.SetFloat("velocidad", Vector3.SqrMagnitude(movement));
+        rb.MovePosition(transform.position + movement * Time.fixedDeltaTime * velocidad);
         MirarEsfera();
     }
 
@@ -38,6 +41,7 @@ public class PersonajeTemporal : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            animaciones.SetTrigger("atacar");
             Instantiate(bala, arma.transform.position, arma.transform.rotation);
         }
     }
