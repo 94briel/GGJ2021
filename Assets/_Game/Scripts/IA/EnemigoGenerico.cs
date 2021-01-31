@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class EnemigoGenerico : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class EnemigoGenerico : MonoBehaviour
     public GameObject particulasMuerte;
     public Vector3 offsetParticulasMuerte;
     public float tiempoMorir;
+
+    public UnityEvent iniciaSeguir;
+    public UnityEvent iniciaIdle;
+    public UnityEvent iniciaAtacar;
 
     NavMeshAgent agente;
 
@@ -87,6 +92,15 @@ public class EnemigoGenerico : MonoBehaviour
             {
                 vidaEnemigo = Control.singleton.jugador.GetComponent<Vida>();
             }
+            iniciaAtacar.Invoke();
+        }
+        else if (e == Estado.idle)
+        {
+            iniciaIdle.Invoke();
+        }
+        else if (e == Estado.siguiendo)
+        {
+            iniciaSeguir.Invoke();
         }
     }
 
