@@ -15,7 +15,11 @@ public class Bala : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        //Vida  
+        Vida v = other.GetComponent<Vida>();
+        if (v != null)
+        {
+            v.CausarDaño(daño);
+        }
         Destroy(gameObject);
     }
     private void OnDestroy()
