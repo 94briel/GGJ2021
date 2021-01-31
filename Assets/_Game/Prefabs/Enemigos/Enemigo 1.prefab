@@ -262,8 +262,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 1, y: 2.0152931, z: 1}
+  m_Center: {x: 0, y: 1.0076466, z: 0}
 --- !u!195 &5108465892107990089
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   rangoAtacar: 3
   "da\xF1o": 5
   vidaEnemigo: {fileID: 0}
-  tipo: 1
+  tipo: 0
   animPersonaje: {fileID: 0}
   particulas: {fileID: 2551006644049629094}
   particulasMuerte: {fileID: 6350922543045608007, guid: 05fd7691776e630499c052a13d2aa482,
@@ -359,6 +359,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  slider: {fileID: 0}
   vivo: 1
 --- !u!1 &8970445034164180154
 GameObject:

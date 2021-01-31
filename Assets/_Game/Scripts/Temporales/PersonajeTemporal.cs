@@ -11,6 +11,7 @@ public class PersonajeTemporal : MonoBehaviour
     public Transform modelo;
     Rigidbody rb;
     public Animator animaciones;
+    float tiempoDisparo;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -24,14 +25,15 @@ public class PersonajeTemporal : MonoBehaviour
     {
         Vector3 movement = Vector3.forward * Input.GetAxis("Vertical") + Vector3.right * Input.GetAxis("Horizontal");
         animaciones.SetFloat("velocidad", Vector3.SqrMagnitude(movement));
+        animaciones.SetBool("atacar", Time.time < tiempoDisparo);
         rb.MovePosition(transform.position + movement * Time.fixedDeltaTime * velocidad);
         MirarEsfera();
     }
 
-    public void MirarEsfera()
+    public void MirarEsfera(bool forzar = false)
     {
         float f = (Input.GetAxis("Vertical") * Input.GetAxis("Vertical")) + Input.GetAxis("Horizontal") * Input.GetAxis("Horizontal");
-        if (f<0.01)
+        if (f<0.01 && !forzar)
         {
             return;
         }
@@ -46,8 +48,9 @@ public class PersonajeTemporal : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            animaciones.SetTrigger("atacar");
+            MirarEsfera(true);
             Instantiate(bala, arma.transform.position, arma.transform.rotation);
+            tiempoDisparo = Time.time + 1;
         }
     }
 }

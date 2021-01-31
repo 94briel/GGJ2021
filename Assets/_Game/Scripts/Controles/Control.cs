@@ -12,6 +12,9 @@ public class Control : MonoBehaviour
     public PostProcessProfile perfilBien;
     public PostProcessProfile perfilMal;
 
+    public GameObject mallaBien;
+    public GameObject mallaMal;
+
     private void Awake()
     {
         singleton = this;
@@ -40,6 +43,9 @@ public class Control : MonoBehaviour
         {
             estadoTalisman = EstadoTalisman.bien;
         }
+
+        mallaBien.SetActive(estadoTalisman == EstadoTalisman.bien);
+        mallaMal.SetActive(estadoTalisman == EstadoTalisman.mal);
 
         switch (estadoTalisman)
         {

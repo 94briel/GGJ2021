@@ -10,6 +10,8 @@ public class Poblador : MonoBehaviour
     public Color[] colorCasos;
 	public List<Casilla> bordes = new List<Casilla>();
 	public List<Casilla> piso = new List<Casilla>();
+	[Header("Jugabilidad")]
+	public Transform jugador;
 
 	[Header("Entorno")]
 	public PosiblesParedes[] posiblesParedes;
@@ -39,7 +41,9 @@ public class Poblador : MonoBehaviour
 		Rellenar();
 		yield return new WaitForSeconds(.05f);
 		Poblar();
-
+		jugador.position = piso[Random.Range(0, piso.Count)].posicion + Vector3.up*1.2f;
+		Portal.singleton.transform.position = piso[Random.Range(0, piso.Count)].posicion;
+		Portal.singleton.transform.transform.Rotate(Vector3.up * Random.Range(0, 4) * 90);
 	}
 
 	public void DetectarEspacios()
