@@ -22,4 +22,9 @@ public class Vida : MonoBehaviour
             eventoMorir.Invoke();
         }
     }
+
+    public float GetSangre()
+    {
+        return vidaActal / vidaInicial;
+    }
 }
