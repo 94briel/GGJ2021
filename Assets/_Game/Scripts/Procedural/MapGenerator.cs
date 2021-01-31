@@ -28,7 +28,7 @@ public class MapGenerator : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
-			GenerateMap();
+			//GenerateMap();
 		}
 	}
 
@@ -377,7 +377,7 @@ public class MapGenerator : MonoBehaviour
 
 		if (useRandomSeed)
 		{
-			seed = Time.time.ToString();
+			seed = (Time.time + UnityEngine.Random.Range(1.2f,19f)).ToString();
 		}
 
 		System.Random pseudoRandom = new System.Random(seed.GetHashCode());
