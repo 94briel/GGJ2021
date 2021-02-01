@@ -44,7 +44,6 @@ public class EnemigoGrande : MonoBehaviour
 
         agente = GetComponent<NavMeshAgent>();
 
-
     }
 
     IEnumerator Interactuar()
@@ -88,11 +87,13 @@ public class EnemigoGrande : MonoBehaviour
     private void OnDisable()
     {
         StopCoroutine(Interactuar());
+        StopCoroutine(CreaEnemigos());
     }
 
     private void OnEnable()
     {
         StartCoroutine(Interactuar());
+        StartCoroutine(CreaEnemigos());
     }
 
     public void CambiarEstado(Estado e)

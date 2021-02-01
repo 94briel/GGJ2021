@@ -34,7 +34,15 @@ public class MorionOclusion : MonoBehaviour
 
     void Activar()
     {
-        hijo.SetActive(true);
+        if (hijo != null)
+        {
+            hijo.SetActive(true);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         //Destroy(gameObject);
     }
 

@@ -26,6 +26,7 @@ public class Portal : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayerPrefs.SetInt(portalPP, 1);
+            SceneManager.LoadScene("Mapa");
         }
     }
 }

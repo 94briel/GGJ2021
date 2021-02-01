@@ -38,8 +38,11 @@ public class EnemigoGenerico : MonoBehaviour
         cuadradoRangoAracar = rangoAtacar * rangoAtacar;
 
         agente = GetComponent<NavMeshAgent>();
+        if (vidaEnemigo == null)
+        {
+            vidaEnemigo = Control.singleton.jugador.GetComponent<Vida>();
+        }
 
-       
     }
 
     IEnumerator Interactuar()
@@ -78,20 +81,24 @@ public class EnemigoGenerico : MonoBehaviour
 
     public void CambiarEstado(Estado e)
     {
-        estado = e;
+        if (vidaEnemigo.vivo)
+        {
+            estado = e;
+        }
+        else
+        {
+            estado = Estado.idle;
+        }
+
 
         if (animPersonaje!= null)
         {
-            animPersonaje.SetInteger("estado", (int)e);
+            animPersonaje.SetInteger("estado", (int)estado);
         }
 
         if (e == Estado.atacando)
         {
             StartCoroutine(MirarEnemigo());
-            if (vidaEnemigo == null)
-            {
-                vidaEnemigo = Control.singleton.jugador.GetComponent<Vida>();
-            }
             iniciaAtacar.Invoke();
         }
         else if (e == Estado.idle)
@@ -106,7 +113,7 @@ public class EnemigoGenerico : MonoBehaviour
 
     void EstadoIdle()
     {
-        if (Control.singleton.estadoTalisman != tipo)
+        if (Control.singleton.estadoTalisman != tipo && vidaEnemigo.vivo)
         {
             if ((Control.singleton.jugador.transform.position - transform.position).sqrMagnitude < cuadradoRangoVision)
             {
@@ -155,7 +162,7 @@ public class EnemigoGenerico : MonoBehaviour
             particulas.Play();
         }
 
-        if (distan > cuadradoRangoAracar + 1)
+        if (distan > cuadradoRangoAracar + 1 || !vidaEnemigo.vivo)
         {
             CambiarEstado(Estado.siguiendo);
         }

@@ -25,6 +25,8 @@ public class Poblador : MonoBehaviour
 
 	[Header("Enemigos")]
 	public GameObject[] enemigos;
+	public GameObject[] enemigoPpal;
+
 	[Range(0f, 1f)]
 	public float posibleEnemigos;
 	public Transform padreEnemigos;
@@ -44,6 +46,7 @@ public class Poblador : MonoBehaviour
 		jugador.position = piso[Random.Range(0, piso.Count)].posicion + Vector3.up*1.2f;
 		Portal.singleton.transform.position = piso[Random.Range(0, piso.Count)].posicion;
 		Portal.singleton.transform.transform.Rotate(Vector3.up * Random.Range(0, 4) * 90);
+		Instantiate(enemigoPpal[Random.Range(0, enemigoPpal.Length)], piso[Random.Range(0, piso.Count)].posicion, Quaternion.identity);
 	}
 
 	public void DetectarEspacios()
