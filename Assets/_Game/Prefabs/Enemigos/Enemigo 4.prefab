@@ -47,10 +47,9 @@ MonoBehaviour:
   audioSource:
   - {fileID: 5912676871871418667}
   clips:
-  - {fileID: 8300000, guid: fdbed31bad0581f43b472b2a3d78cc9c, type: 3}
-  - {fileID: 8300000, guid: 7a5bdd76d3c8c6447a1a904895c6130a, type: 3}
-  - {fileID: 8300000, guid: a5b79021c6f9a5f489242bfe93e52343, type: 3}
-  - {fileID: 8300000, guid: 7b8e309846f921b4fadaab62d75a5735, type: 3}
+  - {fileID: 8300000, guid: 6a47f525c7e7fec478ee92595efe6016, type: 3}
+  - {fileID: 8300000, guid: 8572665556afc3b458f163ca5ed45d01, type: 3}
+  - {fileID: 8300000, guid: a46bf795509a63d4dafc0739db6411dc, type: 3}
   automatico: 0
 --- !u!82 &5912676871871418667
 AudioSource:
@@ -61,7 +60,8 @@ AudioSource:
   m_GameObject: {fileID: 2092138750428982227}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4236079172205470678, guid: cefe460f57b689047a0b454906e5b764,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -342,6 +342,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 804462223871561624}
+        m_MethodName: PlayRandom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  particulasMuerte: {fileID: 0}
+  cambiaSnapshots: 0
+  audioSnapshots: []
+  audioMuerte: {fileID: 0}
   slider: {fileID: 0}
   vivo: 1
 --- !u!95 &4351410386405932844
