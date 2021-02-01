@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class VidaPowerUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float cuantaVida = 20;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            Control.singleton.jugador.GetComponent<Vida>().SumarVida(cuantaVida);
+        }
     }
 }

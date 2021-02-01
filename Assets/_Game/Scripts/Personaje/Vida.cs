@@ -10,6 +10,7 @@ public class Vida : MonoBehaviour
     public float vidaInicial;
     public float vidaActal;
     public UnityEvent eventoMorir;
+    public GameObject particulasMuerte;
     public bool cambiaSnapshots = false;
     public AudioMixerSnapshot[] audioSnapshots;
     public AudioMixerSnapshot audioMuerte;
@@ -26,10 +27,14 @@ public class Vida : MonoBehaviour
             slider.value = 1;
         }
     }
-    public void CausarDaño(float cuanto)
+
+    public void SumarVida(float cuanto)
     {
-        if (!vivo) return;
-        vidaActal -= cuanto;
+        vidaActal += cuanto;
+        PosCambio();
+    }
+    void PosCambio()
+    {
         if (slider != null)
         {
             slider.value = GetSangre();
@@ -38,10 +43,21 @@ public class Vida : MonoBehaviour
         {
             audioSnapshots[(int)(GetSangre() * audioSnapshots.Length)].TransitionTo(2f);
         }
+    }
+
+    public void CausarDaño(float cuanto)
+    {
+        if (!vivo) return;
+        vidaActal -= cuanto;
+        PosCambio();
         if (vidaActal <= 0)
         {
             vivo = false;
             eventoMorir.Invoke();
+            if (particulasMuerte!=null)
+            {
+                Instantiate(particulasMuerte, transform.position, Quaternion.identity);
+            }
         }
     }
 

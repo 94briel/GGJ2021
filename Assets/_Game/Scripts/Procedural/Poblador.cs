@@ -12,6 +12,8 @@ public class Poblador : MonoBehaviour
 	public List<Casilla> piso = new List<Casilla>();
 	[Header("Jugabilidad")]
 	public Transform jugador;
+	public GameObject powerUpVida;
+	public int cuantasVidas;
 
 	[Header("Entorno")]
 	public PosiblesParedes[] posiblesParedes;
@@ -41,12 +43,15 @@ public class Poblador : MonoBehaviour
 		DetectarEspacios();
 		yield return new WaitForSeconds(.05f);
 		Rellenar();
-		yield return new WaitForSeconds(.05f);
 		Poblar();
 		jugador.position = piso[Random.Range(0, piso.Count)].posicion + Vector3.up*1.2f;
 		Portal.singleton.transform.position = piso[Random.Range(0, piso.Count)].posicion;
 		Portal.singleton.transform.transform.Rotate(Vector3.up * Random.Range(0, 4) * 90);
 		Instantiate(enemigoPpal[Random.Range(0, enemigoPpal.Length)], piso[Random.Range(0, piso.Count)].posicion, Quaternion.identity);
+        for (int i = 0; i < cuantasVidas; i++)
+        {
+			Instantiate(powerUpVida, piso[Random.Range(0, piso.Count)].posicion, Quaternion.identity);
+		}
 	}
 
 	public void DetectarEspacios()

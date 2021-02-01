@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering.PostProcessing;
 
 public class Control : MonoBehaviour
@@ -14,6 +15,8 @@ public class Control : MonoBehaviour
 
     public GameObject mallaBien;
     public GameObject mallaMal;
+
+    public UnityEvent eventoCambiaModo;
 
     private void Awake()
     {
@@ -43,6 +46,8 @@ public class Control : MonoBehaviour
         {
             estadoTalisman = EstadoTalisman.bien;
         }
+
+        eventoCambiaModo.Invoke();
 
         mallaBien.SetActive(estadoTalisman == EstadoTalisman.bien);
         mallaMal.SetActive(estadoTalisman == EstadoTalisman.mal);
