@@ -1767,6 +1767,9 @@ MonoBehaviour:
   perfilMal: {fileID: 11400000, guid: 87805d4d4e890534eb827a52fd58e994, type: 2}
   mallaBien: {fileID: 1794839704}
   mallaMal: {fileID: 838186465}
+  eventoCambiaModo:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1595344339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1801,6 +1804,9 @@ MonoBehaviour:
   bordes: []
   piso: []
   jugador: {fileID: 555587306}
+  powerUpVida: {fileID: 2965974064888757551, guid: 3e1151f9310d7674c8882f0b8daf7782,
+    type: 3}
+  cuantasVidas: 20
   posiblesParedes:
   - posibles: []
     activo: 0
