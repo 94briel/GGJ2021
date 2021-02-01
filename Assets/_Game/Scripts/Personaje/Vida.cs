@@ -12,6 +12,7 @@ public class Vida : MonoBehaviour
     public UnityEvent eventoMorir;
     public bool cambiaSnapshots = false;
     public AudioMixerSnapshot[] audioSnapshots;
+    public AudioMixerSnapshot audioMuerte;
 
     public Slider slider;
 
@@ -29,19 +30,24 @@ public class Vida : MonoBehaviour
     {
         if (!vivo) return;
         vidaActal -= cuanto;
-        if (vidaActal <= 0)
-        {
-            vivo = false;
-            eventoMorir.Invoke();
-        }
         if (slider != null)
         {
             slider.value = GetSangre();
         }
         if (cambiaSnapshots)
         {
-            audioSnapshots[(int)GetSangre() * audioSnapshots.Length].TransitionTo(2f);
+            audioSnapshots[(int)(GetSangre() * audioSnapshots.Length)].TransitionTo(2f);
         }
+        if (vidaActal <= 0)
+        {
+            vivo = false;
+            eventoMorir.Invoke();
+        }
+    }
+
+    public void CambiarAudioMuerte()
+    {
+        audioMuerte.TransitionTo(1f);
     }
 
     public float GetSangre()
