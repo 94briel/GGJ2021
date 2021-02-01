@@ -1,0 +1,683 @@
+fileFormatVersion: 2
+guid: 84867aaab77e942408592c52bd8c5de2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2876712091700245101
+    second: UITUMBAGA_0
+  - first:
+      213: -4115626546777982741
+    second: UITUMBAGA_1
+  - first:
+      213: -595342959489328144
+    second: UITUMBAGA_2
+  - first:
+      213: 7762450181206092006
+    second: UITUMBAGA_3
+  - first:
+      213: -7510559302688842011
+    second: UITUMBAGA_4
+  - first:
+      213: 4102897052284929123
+    second: UITUMBAGA_5
+  - first:
+      213: 9037781696732434215
+    second: UITUMBAGA_6
+  - first:
+      213: -9012680792320679874
+    second: UITUMBAGA_7
+  - first:
+      213: -2878483052773256327
+    second: UITUMBAGA_8
+  - first:
+      213: -4614395855317891286
+    second: UITUMBAGA_9
+  - first:
+      213: 4578359259295608757
+    second: UITUMBAGA_10
+  - first:
+      213: 5697490118889549224
+    second: UITUMBAGA_11
+  - first:
+      213: 1074054743884831076
+    second: UITUMBAGA_12
+  - first:
+      213: -6664581788847801033
+    second: UITUMBAGA_13
+  - first:
+      213: -6609500151885284380
+    second: UITUMBAGA_14
+  - first:
+      213: -9086672146094344311
+    second: UITUMBAGA_15
+  - first:
+      213: -3467480739167746781
+    second: UITUMBAGA_16
+  - first:
+      213: 8578642529547228647
+    second: UITUMBAGA_17
+  - first:
+      213: -8418174109722750977
+    second: UITUMBAGA_18
+  - first:
+      213: -8949036887129985468
+    second: UITUMBAGA_19
+  - first:
+      213: 2069220377085798089
+    second: UITUMBAGA_20
+  - first:
+      213: -4060855120506222264
+    second: UITUMBAGA_21
+  - first:
+      213: -5817506548682058692
+    second: UITUMBAGA_22
+  - first:
+      213: 545201508861404700
+    second: UITUMBAGA_23
+  - first:
+      213: 4657510725750109520
+    second: UITUMBAGA_24
+  - first:
+      213: -3013624387446439478
+    second: UITUMBAGA_25
+  - first:
+      213: 3458904410789594513
+    second: UITUMBAGA_26
+  - first:
+      213: -2405487559236883258
+    second: UITUMBAGA_27
+  - first:
+      213: -8498268683191370539
+    second: UITUMBAGA_28
+  - first:
+      213: 3730018692979376257
+    second: UITUMBAGA_29
+  - first:
+      213: -7591385914645994896
+    second: UITUMBAGA_30
+  - first:
+      213: 5402925970256018862
+    second: UITUMBAGA_31
+  - first:
+      213: 3274917990749782019
+    second: UITUMBAGA_32
+  - first:
+      213: -7564229325012137955
+    second: UITUMBAGA_33
+  - first:
+      213: -6701521402073561157
+    second: UITUMBAGA_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UITUMBAGA_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 844
+        width: 163
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dc225189dd318d0800000000000000
+      internalID: -2876712091700245101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_4
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 728
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 23, z: 17, w: 17}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eed9ba5b1225c790800000000000000
+      internalID: -7510559302688842011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_5
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 728
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 23, z: 17, w: 17}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364c077812b60f830800000000000000
+      internalID: 4102897052284929123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 762
+        width: 273
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f8347a196ac6d70800000000000000
+      internalID: 9037781696732434215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_16
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 679
+        width: 136
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325c564a3a801efc0800000000000000
+      internalID: -3467480739167746781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 427
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44eefbc7d52aec380800000000000000
+      internalID: -8949036887129985468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_20
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 472
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 23, z: 17, w: 17}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6e23248f857bc10800000000000000
+      internalID: 2069220377085798089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_21
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 472
+        width: 204
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 23, z: 17, w: 17}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84986e188c1f4a7c0800000000000000
+      internalID: -4060855120506222264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_22
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 405
+        width: 412
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c341c4fcd90144fa0800000000000000
+      internalID: -5817506548682058692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_23
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 282
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16e0ba32e1f09700800000000000000
+      internalID: 545201508861404700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_24
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 282
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05538e9145dc2a040800000000000000
+      internalID: 4657510725750109520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 282
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac10dc326947d26d0800000000000000
+      internalID: -3013624387446439478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_26
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 282
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195452d4c3f700030800000000000000
+      internalID: 3458904410789594513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_27
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 350
+        width: 412
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc60184fcdfd9ed0800000000000000
+      internalID: -2405487559236883258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_28
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 294
+        width: 412
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc3d8c88a5101a80800000000000000
+      internalID: -8498268683191370539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 154
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1804a902d30b3c330800000000000000
+      internalID: 3730018692979376257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 154
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0722f944bbaf5a690800000000000000
+      internalID: -7591385914645994896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_31
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 154
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadb7d44b8c0bfa40800000000000000
+      internalID: 5402925970256018862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_32
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 153
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3004d23bf88d27d20800000000000000
+      internalID: 3274917990749782019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_33
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 215
+        width: 446
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d180f038185760790800000000000000
+      internalID: -7564229325012137955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_34
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 150
+        width: 446
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb74abe7ac96ff2a0800000000000000
+      internalID: -6701521402073561157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UITUMBAGA_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 431
+        width: 86
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be87123167b52e6c0800000000000000
+      internalID: -4115626546777982741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
