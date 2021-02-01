@@ -270,6 +270,7 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 24400004}
   - {fileID: 7682195527963470863}
+  - {fileID: 7092645013180973802}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -294,16 +295,19 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snapshot
+  m_Name: Muerte
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: dbf125eae8c5bd54abf174ec7dab4e3b
   m_FloatValues:
     76712f10d37a9564a85549288226941a: -80
     8726e531e387baf44b5754cda5745876: 20
+    6c2d42b3142ba30479d613d2da10ef4c: 6.3
     f30383d5d5a777d4a8c2079fdfe6dfe2: 5.8
+    be39393b13a8ac44282a67e82acacc6e: 48
     3cf9715d95d0e254cb968f2f8a5fb149: -80
     870fbb9d9fed1224794a38e06924bbea: 10762
     48d7167eacd3fc742ae406a94f342e1f: -80
+    971211ae442c2d1449e70ed63d0e1076: -12.9
     28feecee06967764ab7fc9963f59fc8a: -80
   m_TransitionOverrides: {}
 --- !u!243 &777405741975215632
@@ -399,6 +403,28 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: -2445585769813362285}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &7092645013180973802
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: fcaaa14ffdbe866489963d4a91a01344
+  m_EffectName: Compressor
+  m_MixLevel: ac3cb04db85e9a74183a6f1ff351e09c
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: 971211ae442c2d1449e70ed63d0e1076
+  - m_ParameterName: Attack
+    m_GUID: be39393b13a8ac44282a67e82acacc6e
+  - m_ParameterName: Release
+    m_GUID: 6436a9fa2fafe6a429a975d51cbe96c0
+  - m_ParameterName: Make up gain
+    m_GUID: 6c2d42b3142ba30479d613d2da10ef4c
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &7218426742500205533
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -469,6 +495,7 @@ AudioMixerSnapshotController:
   m_SnapshotID: 3e4417365c4ad774eb28e0cdb12320ef
   m_FloatValues:
     76712f10d37a9564a85549288226941a: -80
+    9c397841a4d5a154eaf5c39dd5d8df01: 0
     c0c50cf1aacf8794681cf9f25f694661: -80
     c06991c5c8bfcaf459597b61debb5e61: -2.5738313
     f30383d5d5a777d4a8c2079fdfe6dfe2: 5
