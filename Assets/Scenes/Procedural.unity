@@ -1554,34 +1554,38 @@ MonoBehaviour:
     - {fileID: 919132149155446097, guid: 0bfa540902e1c3f4d875e6bea05e4d60, type: 3}
     activo: 0
   - posibles:
-    - {fileID: 919132149155446097, guid: d378148b156773c4bb76a1c5f2138596, type: 3}
+    - {fileID: 919132149155446097, guid: 1ce389c732e96984eb655a8ad3bcbccd, type: 3}
     activo: 1
   - posibles:
-    - {fileID: 919132149155446097, guid: f2c8a077eeee11f48a09303a8d06e165, type: 3}
+    - {fileID: 3125438649491758345, guid: 754e6be3b94b8514b8106b9f95aea636, type: 3}
     - {fileID: 919132149155446097, guid: 76eab3b136f60414c91fce8677673c50, type: 3}
+    - {fileID: 919132149155446097, guid: 45b32a54dfd042e479476c5ef41bc5e2, type: 3}
     activo: 1
   - posibles: []
     activo: 0
   - posibles:
     - {fileID: 919132149155446097, guid: d3b68d393aba75a4e91be2cc0607f8d2, type: 3}
     - {fileID: 919132149155446097, guid: 3306db84c0deed4428d0566b81232f1d, type: 3}
+    - {fileID: 919132149155446097, guid: 0ea3ea8d4ca4edf4aa8306754e2e6bab, type: 3}
     activo: 1
   - posibles: []
     activo: 0
   - posibles:
-    - {fileID: 919132149155446097, guid: b9ad75699bccb1e45a85ecf6b403f206, type: 3}
+    - {fileID: 7829136501845471000, guid: ec6e4b2b3791ee242a2c06245e8e0031, type: 3}
     - {fileID: 919132149155446097, guid: 90f2fdbcd6055e54e8166567ba710e90, type: 3}
+    - {fileID: 919132149155446097, guid: af258a54725602b45b8a4d98fe7a2bad, type: 3}
     activo: 1
   - posibles:
     - {fileID: 919132149155446097, guid: af8d26c688e2e114faaa81248ac3a723, type: 3}
     - {fileID: 919132149155446097, guid: 2bd6279461855a448bf196874c6eaff5, type: 3}
+    - {fileID: 919132149155446097, guid: 0874f0afb109c1b4b95c5fb3d68b5cd5, type: 3}
     activo: 1
   - posibles: []
     activo: 0
   - posibles: []
     activo: 0
   - posibles:
-    - {fileID: 919132149155446097, guid: 393962a98dc2ef646aa4b092ced6fc7d, type: 3}
+    - {fileID: 8954507527075710916, guid: 315d09f78ac76ef4c98588b83a807a35, type: 3}
     - {fileID: 919132149155446097, guid: fdefc5be5b5646e46a333d2f6269d388, type: 3}
     activo: 1
   - posibles:
@@ -1615,7 +1619,7 @@ MonoBehaviour:
     activo: 1
   padreEntorno: {fileID: 151460676}
   posibleCaso0: 0.01
-  posibleParedes: 0.08
+  posibleParedes: 0.2
   enemigos:
   - {fileID: 5108465892107990088, guid: 616decddab0a8f945bcda453e873822e, type: 3}
   - {fileID: 5108465892107990088, guid: 86f8532fe2fd7394bb10bbba9fe161c7, type: 3}
@@ -1840,6 +1844,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mapa
+      objectReference: {fileID: 0}
+    - target: {fileID: 6800308282185474249, guid: 025d4a9b16b41f943b4dd9440fe3bf14,
+        type: 3}
+      propertyPath: randomFillPercent
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 6800308282185474252, guid: 025d4a9b16b41f943b4dd9440fe3bf14,
         type: 3}

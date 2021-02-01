@@ -327,6 +327,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  cambiaSnapshots: 0
+  audioSnapshots: []
+  audioMuerte: {fileID: 0}
   slider: {fileID: 0}
   vivo: 1
 --- !u!114 &4188427829983981390
@@ -352,13 +355,13 @@ MonoBehaviour:
   particulasMuerte: {fileID: 6002012968880563226, guid: 2610052fa7ec4d346b1fb7748cff334b,
     type: 3}
   offsetParticulasMuerte: {x: 0, y: 0, z: 0}
-  tiempoMorir: 0
+  tiempoMorir: 4
   enemigos:
   - {fileID: 5108465892107990088, guid: 86f8532fe2fd7394bb10bbba9fe161c7, type: 3}
   - {fileID: 5108465892107990088, guid: 616decddab0a8f945bcda453e873822e, type: 3}
   - {fileID: 5108465892107990088, guid: ed14a5e76e0f9794f8a17629b9c6e76d, type: 3}
   - {fileID: 5108465892107990088, guid: db3daf4196dc94b489d66a08d8df71e9, type: 3}
-  tiemposEspera: {x: 3, y: 7}
+  tiemposEspera: {x: 3, y: 5}
 --- !u!1001 &4376925319736272583
 PrefabInstance:
   m_ObjectHideFlags: 0
