@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7a5bdd76d3c8c6447a1a904895c6130a, type: 3}
   - {fileID: 8300000, guid: a5b79021c6f9a5f489242bfe93e52343, type: 3}
   - {fileID: 8300000, guid: 7b8e309846f921b4fadaab62d75a5735, type: 3}
+  automatico: 0
 --- !u!82 &5912676871871418667
 AudioSource:
   m_ObjectHideFlags: 0
@@ -263,8 +264,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 1, y: 2.3597476, z: 1}
+  m_Center: {x: 0, y: 1.1798738, z: 0}
 --- !u!195 &5108465892107990089
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -326,6 +327,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  slider: {fileID: 0}
   vivo: 1
 --- !u!114 &4188427829983981390
 MonoBehaviour:
@@ -347,7 +349,8 @@ MonoBehaviour:
   vidaEnemigo: {fileID: 0}
   animPersonaje: {fileID: 8286632516042829124}
   particulas: {fileID: 0}
-  particulasMuerte: {fileID: 0}
+  particulasMuerte: {fileID: 6002012968880563226, guid: 2610052fa7ec4d346b1fb7748cff334b,
+    type: 3}
   offsetParticulasMuerte: {x: 0, y: 0, z: 0}
   tiempoMorir: 0
   enemigos: []

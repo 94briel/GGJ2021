@@ -29,6 +29,13 @@ public class EnemigoGrande : MonoBehaviour
     float cuadradoRangoEscapar;
     float cuadradoRangoAracar;
 
+    public static EnemigoGrande singleton;
+
+    private void Awake()
+    {
+        singleton = this;
+    }
+
     void Start()
     {
         cuadradoRangoVision = rangoVision * rangoVision;

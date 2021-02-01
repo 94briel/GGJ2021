@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 5108465892107990082}
   - component: {fileID: 3570522699743787673}
   m_Layer: 0
-  m_Name: Enemigo 3
+  m_Name: Enemigo 4
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   rangoAtacar: 5
   "da\xF1o": 5
   vidaEnemigo: {fileID: 0}
-  tipo: 1
+  tipo: 0
   animPersonaje: {fileID: 4351410386405932844}
   particulas: {fileID: 2853321535852734506}
   particulasMuerte: {fileID: 0}
