@@ -29,6 +29,13 @@ public class EnemigoGrande : MonoBehaviour
     float cuadradoRangoEscapar;
     float cuadradoRangoAracar;
 
+    public static EnemigoGrande singleton;
+
+    private void Awake()
+    {
+        singleton = this;
+    }
+
     void Start()
     {
         cuadradoRangoVision = rangoVision * rangoVision;
@@ -36,7 +43,6 @@ public class EnemigoGrande : MonoBehaviour
         cuadradoRangoAracar = rangoAtacar * rangoAtacar;
 
         agente = GetComponent<NavMeshAgent>();
-
 
     }
 
@@ -81,11 +87,13 @@ public class EnemigoGrande : MonoBehaviour
     private void OnDisable()
     {
         StopCoroutine(Interactuar());
+        StopCoroutine(CreaEnemigos());
     }
 
     private void OnEnable()
     {
         StartCoroutine(Interactuar());
+        StartCoroutine(CreaEnemigos());
     }
 
     public void CambiarEstado(Estado e)
