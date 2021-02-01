@@ -703,7 +703,7 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -715,6 +715,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
@@ -730,6 +742,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 555587303}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1327136205}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1327136205}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1327136205}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -739,6 +763,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
@@ -754,11 +790,43 @@ PrefabInstance:
       value: CambiarAudioMuerte
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: StopActual
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: ChangeState
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: PlayRandom
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
@@ -775,6 +843,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
       propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 555587303, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}
+      propertyPath: eventoMorir.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 963194225, guid: 9035f0b9bf7a60a4d84123103179a4dd, type: 3}

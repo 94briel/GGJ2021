@@ -20,6 +20,10 @@ public class AudioTiempo : MonoBehaviour
         }
     }
 
+    public void ChangeState(int s)
+    {
+        state = s;
+    }
     IEnumerator SoundOut()
     {
         while (automatico)
